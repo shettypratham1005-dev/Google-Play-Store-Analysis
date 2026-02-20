@@ -1,4 +1,4 @@
-# Google-Play-Store-Analysis
+# Grouped Bar Chart Analysis
 
 ## Project Overview
 This project analyzes the Google Play Store dataset to compare average rating and total review count for the top 10 app categories by installs.
