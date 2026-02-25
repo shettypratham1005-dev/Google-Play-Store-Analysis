@@ -1,105 +1,115 @@
-📊 Task 4 – Time Series Trend Analysis & Dynamic Dashboard Control
-📌 Objective
+Task 4 – Time Series Trend Analysis & Dynamic Dashboard Control
+Project Overview
 
-To analyze monthly install trends over time using Python and Power BI, apply advanced filtering conditions, and build a dynamic dashboard that shows data only during a specific time window (6 PM – 9 PM IST).
+This task focuses on performing time series analysis on Google Play Store app installs, identifying monthly growth trends, applying advanced filtering logic, and creating a dynamic Power BI dashboard that displays data only during a specific time window (6 PM – 9 PM IST).
 
-🛠 Tools & Technologies
+Dataset
 
-Python (Jupyter Notebook)
+File used:
+Play Store Data.csv
 
-Pandas
+Main columns used:
 
-Matplotlib
+App
 
-Power BI
+Category
 
-DAX
+Installs
 
-📂 Dataset
+Reviews
 
-Google Play Store Dataset
+Last Updated
 
-Source: Kaggle
-
-File: Play Store Data.csv
-
-🧹 Data Cleaning Steps
+Data Cleaning Process
 
 Removed missing and invalid values
 
-Converted Installs into numeric format
+Converted Installs column into numeric format
 
-Converted Last Updated to DateTime
+Converted Last Updated column into datetime format
 
-Extracted Month-Year for time series analysis
+Extracted Month-Year for time series grouping
 
-Filtered apps based on:
+Applied advanced filtering conditions:
 
 Reviews > 500
 
-App Name does not start with X, Y, Z
+App name does not start with X, Y, Z
 
-App Name does not contain letter "S"
+App name does not contain letter S
 
-Category starts with E, C, or B
+Category starts only with E, C, or B
 
-📊 Analysis Performed
-1. Time Series Trend Analysis
+Data Transformations
 
-Aggregated total installs monthly
+Created Month-Year column for trend analysis
 
-Segmented trend by app category
+Aggregated monthly installs
 
-Created line chart to visualize growth
+Calculated Month-over-Month growth percentage
 
-2. Growth Highlighting
+Applied category-based translation logic for visualization
 
-Calculated Month-over-Month growth (%)
+Analysis Performed
 
-Highlighted areas where growth > 20%
+Time series trend analysis of installs
 
-3. Category Translation (Visualization Level)
+Category-wise monthly growth analysis
+
+Identification of high-growth periods (>20%)
+
+Comparison of install trends across categories
+
+Category Translation (Visualization Level)
 Original Category	Display Language	Translated Name
 Beauty	Hindi	सौंदर्य
 Business	Tamil	வணிகம்
 Dating	German	Partnersuche
-4. Dynamic Dashboard Visibility (Power BI)
+Visualization
 
-Dashboard is visible only between 6 PM to 9 PM IST using DAX measure logic.
+The following visualizations were created:
+
+Monthly Time Series Line Chart
+
+Category-wise trend comparison
+
+Growth highlighting (>20%)
+
+Multilingual category representation
+
+Dynamic dashboard visibility control
+
+Time Restriction Logic
+
+The dashboard visuals are displayed only between 6 PM IST and 9 PM IST using the following DAX logic:
 
 Show Chart =
 VAR CurrentHour = HOUR(NOW()) + 5.5
 RETURN
 IF(CurrentHour >= 18 && CurrentHour < 21, 1, 0)
-📈 Dashboard Output
 
-Time series line chart
+Outside this time range, visuals remain hidden, adding dynamic control to the dashboard.
 
-Dynamic filtering
+Tools Used
 
-Growth highlighting
+Python
 
-Multilingual category display
+Pandas
 
-Time-based visibility control
+Matplotlib
 
-📁 Project Files
-File Name	Description
-task4_analysis.ipynb	Python data cleaning & time series analysis
-task4_dashboard.pbix	Power BI dynamic dashboard
-Play Store Data.csv	Dataset
-🎯 Key Learning Outcomes
+Jupyter Notebook
 
-Advanced time series analysis
+Power BI
 
-Complex filtering logic implementation
+DAX
 
-Dynamic dashboards using DAX
+Conclusion
 
-Data translation & localization techniques
+Clear monthly install growth trends were observed.
 
-Business-level dashboard design
+Certain categories showed high growth spikes (>20%).
 
-🚀 Conclusion
+Advanced filtering & transformation logic improved data quality.
 
-This task demonstrates advanced Power BI dashboard engineering, Python time series analytics, and dynamic report automation, making it highly relevant for Data Analyst and BI Developer roles.
+Time-based dashboard visibility added automation and business logic control.
