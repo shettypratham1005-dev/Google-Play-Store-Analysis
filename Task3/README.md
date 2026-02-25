@@ -1,15 +1,15 @@
 Google Play Store Analysis — Task 3
-- Project Overview
+## Project Overview
 
 This task extends the original Google Play Store Analysis project by implementing an advanced dual-axis visualization using Power BI.
 The dashboard compares Average Installs and Average Revenue for Free vs Paid apps across the Top 3 App Categories, using multiple business-driven filters and dynamic time-based visibility logic.
 
-- Dataset Used
+## Dataset Used
 
 File: Play Store Data.csv
 Source: Google Play Store dataset
 
---Key Columns Used:
+## Key Columns Used:
 
 App
 
@@ -31,7 +31,7 @@ Android Version
 
 Content Rating
 
-- Data Cleaning & Transformations
+## Data Cleaning & Transformations
 
 The following transformations were applied using Power Query & DAX:
 
@@ -49,7 +49,7 @@ Handled missing and error values
 
 Converted Last Updated column to Date format
 
-- Calculated Columns & Measures (DAX)
+## Calculated Columns & Measures (DAX)
 Calculated Columns:
 
 Revenue = Price × Installs
@@ -72,7 +72,7 @@ Average Rating
 
 Time-based visibility measure (Show Chart)
 
-- Visualization Implemented
+## Visualization Implemented
 Dual-Axis Chart:
 
 Column Axis: Average Installs
@@ -83,7 +83,7 @@ Legend: Free vs Paid Apps
 
 Categories: Top 3 App Categories by total installs
 
-- Business Filters Applied
+## Business Filters Applied
 
 The following filters were implemented as per task instructions:
 
@@ -101,7 +101,7 @@ App Name Length ≤ 30 characters
 
 Top 3 Categories based on total installs
 
-- Time-Based Visibility Logic
+## Time-Based Visibility Logic
 
 The visualization is dynamically displayed only between 1 PM IST and 2 PM IST using a DAX-based time filter.
 
@@ -117,7 +117,7 @@ Average Rating
 
 These KPIs enhance dashboard readability and business insights.
 
-- Tools & Technologies Used
+## Tools & Technologies Used
 
 Power BI Desktop
 
@@ -132,7 +132,7 @@ Microsoft Excel (for dataset review)
 <img width="1915" height="1079" alt="PowerBI (2)" src="https://github.com/user-attachments/assets/c202067a-b824-4c07-a280-57f7f7b685d8" />
 
 
-- Conclusion
+## Conclusion
 
 This task demonstrates advanced data transformation, business rule filtering, dual-axis visual comparison, and dynamic time-based control using Power BI.
 The dashboard provides actionable insights into Free vs Paid app performance across leading app categories.
