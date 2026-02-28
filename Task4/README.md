@@ -1,6 +1,6 @@
 ## Time Series Trend Analysis & Dynamic Dashboard Control
 
-##Project Overview
+## Project Overview
 This task focuses on performing time series analysis on Google Play Store app installs, identifying monthly growth trends, applying advanced filtering logic, and creating a dynamic Power BI dashboard that displays data only during a specific time window (6 PM – 9 PM IST).
 
 ## Dataset
