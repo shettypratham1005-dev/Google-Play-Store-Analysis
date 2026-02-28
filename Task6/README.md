@@ -60,14 +60,14 @@ App Size between 20 MB and 80 MB
 To improve global readability, category names were translated as:
 
 Original Category	Translated Language
-Travel & Local	French → Voyage et Local
-Productivity	Spanish → Productividad
-Photography	Japanese → 写真
+Travel & Local	French → Voyage et Local,
+Productivity	Spanish → Productividad,
+Photography	Japanese → 写真.
 
 These translated values are displayed directly in the chart legend.
 
 ## Calculated Measures & DAX Logic
-Measures Created:
+1.Measures Created:
 
 Total Installs
 
@@ -77,13 +77,13 @@ Highlight Flag (Growth > 25%)
 
 Time-Based Visibility Logic
 
-Time Control Logic:
+**Time Control Logic:
 
 The visualization appears only between 4 PM IST and 6 PM IST.
 Outside this time window, the chart is automatically hidden from the dashboard.
 
 ## Visualization Implemented
-Stacked Area Chart
+1.Stacked Area Chart
 
 X-Axis: Month-Year
 
@@ -91,7 +91,7 @@ Y-Axis: Total Installs
 
 Legend: Translated Category Names
 
-Special Enhancements
+2.Special Enhancements
 
 Dynamic color intensity increase for months where installs grow more than 25% MoM
 
