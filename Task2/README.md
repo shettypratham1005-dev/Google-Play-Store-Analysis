@@ -1,4 +1,4 @@
-# Task 2 – Choropleth Map Analysis
+# Choropleth Map Analysis using Power BI
 
 ## Project Overview
 
