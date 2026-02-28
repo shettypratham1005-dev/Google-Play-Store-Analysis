@@ -1,7 +1,7 @@
-Google Play Store Analysis — Task 3
+## Dual Axis Visualization using Power BI
 ## Project Overview
 
-This task extends the original Google Play Store Analysis project by implementing an advanced dual-axis visualization using Power BI.
+This task extends the original Google Play Store Analysis project by implementing an advanced c
 The dashboard compares Average Installs and Average Revenue for Free vs Paid apps across the Top 3 App Categories, using multiple business-driven filters and dynamic time-based visibility logic.
 
 ## Dataset Used
