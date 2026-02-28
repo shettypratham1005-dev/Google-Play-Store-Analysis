@@ -77,7 +77,7 @@ Highlight Flag (Growth > 25%)
 
 Time-Based Visibility Logic
 
-**Time Control Logic:
+2.Time Control Logic:
 
 The visualization appears only between 4 PM IST and 6 PM IST.
 Outside this time window, the chart is automatically hidden from the dashboard.
