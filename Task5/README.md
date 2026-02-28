@@ -26,7 +26,7 @@ Sentiment Subjectivity
 
 Last Updated
 
-## - Data Cleaning & Preprocessing
+## Data Cleaning & Preprocessing
 
 Performed using Power Query Editor:
 
@@ -42,8 +42,8 @@ Created derived column: Size_MB
 
 Created calculated column: Sentiment_Subjectivity
 
-## - Visualizations Implemented
-1) Bubble Chart (Scatter Plot)
+## Visualizations Implemented
+1)Bubble Chart (Scatter Plot)
 
 Shows relationship between:
 
@@ -57,7 +57,7 @@ Legend: Category
 
 This visual highlights how app size and installs impact user ratings.
 
-2️) Category-Based Filtering
+2️)Category-Based Filtering
 
 Filtered:
 
@@ -67,7 +67,7 @@ Installs > 500,000
 
 Selected categories for focused analysis
 
-3️) Category Translation (Multi-Language)
+3️)Category Translation (Multi-Language)
 
 Applied dynamic translation using DAX calculated column:
 
@@ -78,13 +78,13 @@ DATING	Verabredung (German)
 
 This enhances global usability and localization support.
 
-4️4) Time-Based Visualization Control
+4️) Time-Based Visualization Control
 
 Bubble chart is visible only between 5 PM and 7 PM IST using a DAX time-based measure.
 
 This demonstrates dynamic visualization control based on real-time conditions.
 
-## - Key DAX Measures & Columns
+##  Key DAX Measures & Columns
 🔹 Category Translation Column
 Translated_Category =
 SWITCH(
@@ -94,12 +94,14 @@ SWITCH(
     'Play Store Data'[Category] = "DATING", "Verabredung (Dating)",
     'Play Store Data'[Category]
 )
+
 🔹 Time Control Measure
 Show Bubble Chart =
 VAR CurrentHour = HOUR(UTCNOW()) + 5.5
 RETURN
 IF(CurrentHour >= 17 && CurrentHour < 19, 1, 0)
-## -Dashboard Features
+
+## Dashboard Features
 
 Interactive filters
 
@@ -113,7 +115,7 @@ Responsive layout
 
 Business-friendly UI
 
-## - Business Insights Generated
+## Business Insights Generated
 
 Identified top-performing app categories
 
@@ -125,7 +127,7 @@ Improved international usability using translation
 
 Implemented operational control using time filtering
 
-## - Tools & Technologies Used
+## Tools & Technologies Used
 
 Power BI Desktop
 
@@ -135,7 +137,7 @@ DAX (Data Analysis Expressions)
 
 Data Visualization Techniques
 
-## - Project Deliverables
+## Project Deliverables
 
 .pbix Power BI dashboard file
 
@@ -143,6 +145,6 @@ Dataset (CSV)
 
 README documentation
 
-## - Outcome
+## Outcome
 
 Successfully created a professional interactive dashboard with advanced analytics, dynamic control, and multilingual support, suitable for business decision-making and portfolio demonstration.
