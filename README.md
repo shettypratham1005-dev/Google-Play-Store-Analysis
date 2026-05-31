@@ -228,8 +228,9 @@ Built an interactive Power BI dashboard to visualize key performance indicators 
 Add screenshots of your Power BI dashboard here.
 
 Example: One of the task I had performed 
-(<img width="1919" height="1054" alt="Grouped Bar Chart" src="https://github.com/user-attachments/assets/3e22871d-8453-4a48-aea7-621c53b3437d" />
-.png)
+
+<img width="1919" height="1054" alt="Grouped Bar Chart" src="https://github.com/user-attachments/assets/3e22871d-8453-4a48-aea7-621c53b3437d" />
+
 
 ---
 
